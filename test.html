@@ -44,9 +44,13 @@
 //   textarea.val(editor.getSession().getValue());
       });
 
+      console.log(editor.getModel());
+
+
         editor.getModel().onDidChangeContent((event) => {
           console.log(editor.getValue());
           console.log(event);
+          console.log(editor.getModel());
         });
       });
 
